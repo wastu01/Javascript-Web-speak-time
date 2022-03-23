@@ -1,0 +1,92 @@
+/* <!-- please use Big-5 code open cuz school server can not use with UTF-8 --> */
+body {
+   font-family: 
+    system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,
+    Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+   font-weight:bold;
+   font-size:33px;
+   line-height: 105%;
+   background: #fefae0;
+/*  �D���C��a https://coolors.co/palettes/trending */
+}
+
+* {
+	padding: auto;
+}
+
+.btn {
+  color:#fff;
+  padding:20px 60px;
+  outline: none;
+  background-color: #27ae60;
+  border: none;
+  border-radius:5px;
+  box-shadow: 0 9px #95a5a6;
+}
+
+.btn:hover{
+  background-color: #2ecc71;
+}
+
+.btn:active {
+  background-color: #2ecc71;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
+
+.btn-1 {
+  padding:20px 60px;
+  outline: none;
+  background-color: #ef233c;
+  border: none;
+  border-radius:5px;
+  box-shadow: 0 9px #95a5a6;
+}
+
+.btn-1:hover{
+  background-color: #F14458;
+}
+
+.btn-1:active {
+  background-color: #F14458;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
+
+a:link{
+  color:#d7e9ff;
+}
+a:visited{
+  color:#5f7795;
+}
+
+a:hover{
+  color:green;
+}
+
+a:active{
+  color:#fd6d41;
+}
+
+
+input[type="text"]
+{
+  margin: 0.5em;
+  padding:8px 80px; 
+  border:2px black solid;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  text-align: center;
+  outline: none;
+  
+}
+.block {
+  /* display:block; */
+  margin-top: 40px;
+  padding: 5px 12px;
+}
+.block .btn{
+  padding: 6px;
+  box-shadow: 1px 5px #2c4d50;
+}

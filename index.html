@@ -1,0 +1,59 @@
+<html lang="zh-TW">
+<!-- /* please use Big-5 code open cuz school server can not use with UTF-8 */ -->
+ <head>
+  <meta charset="big-5">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javascript-語音報時</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- 引入 webduino js 函式庫 -->
+   <script src="https://blocklypro.webduino.io/node_modules/jquery/dist/jquery.min.js?rev=2f6b11a7e914718e0290410e85366fe9"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
+  <script src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=6e074ceb23d12d1f7cf2ec95cd5a4150"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/firebase.min.js?rev=c0bfd493efd477d098a4ae9e92b13880"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
+   
+</head>
+<body>
+  <p>語音報時-物聯網系統設計應用課程實作</p>
+  <p id="text_0">原生 JS 顯示動態時間</p>
+  <p id="updateTime">動態時間</p>
+  <button onclick="changeColor('green');" class="btn">綠綠的</button>
+  <button onclick="changeColor('red');" class="btn btn-1">紅紅的</button>
+  <br>
+  <p id="text_1">time-is 外掛導入顯示動態時間</p>
+  <a href="https://time.is/" id="time_is_link" rel="nofollow" target="_dct">臺中市 目前的時間:</a>
+<span id="Taichung_z43f"></span>
+  <script src="//widget.time.is/t.js"></script>
+<script>time_is_widget.init({Taichung_z43f:{}});</script>
+
+<p id="text_2">Webduino 外掛導入顯示動態時間</p>
+<p id="webduinoTime" class="webduinoTime">動態時間</p>
+  
+  <p>Webduino 語音報時系統</p>
+    <button onclick="changeInnerHtml();" class ="btn" id="speaktime">播報台灣時間</button>
+  <button onclick="copyEvent('catchtime')" class ="btn">複製語音內容</button>
+  <br>
+ 
+  <p>播放控制器</p>
+  <button  class ="btn" id="btn3">暫停</button>
+  <button  class ="btn" id="btn4">繼續</button>
+  <button  class ="btn" id="btn5">停止</button>
+  <div class="block">
+    <input name="speak" id="speak" type="text" placeholder="輸入文字" value="" required/>
+    <button onclick="copyEvent('time')" class ="btn btn-2">開發中</button>
+
+  </div>
+ 
+  <br>
+  <div id="catchtime"></div>
+  <br>
+  <a href="https://hackmd.io/@DCT/語音朗讀系統" target="_dct" title="連結替代文字" ><button onclick="" class="btn">傳送門：Week05 學習日誌</button></a>
+  
+  
+</body>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
