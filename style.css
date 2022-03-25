@@ -1,22 +1,36 @@
-/* <!-- please use Big-5 code open cuz school server can not use with UTF-8 --> */
+﻿/* <!-- please use Big-5 code open cuz school server can not use with UTF-8 --> */
 body {
    font-family: 
     system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,
     Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
    font-weight:bold;
-   font-size:33px;
+   font-size:13px;
    line-height: 105%;
    background: #fefae0;
 
 }
 
 * {
-	padding: auto;
+	/* padding: auto; */
+}
+.container{
+  width: 900px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  line-height:3em;
+}
+.row-6{
+  margin: 0.2em;
+  
+}
+.UI{
+  display: flex;
 }
 
 .btn {
   color:#fff;
-  padding:20px 60px;
+  padding:12px 45px;
   outline: none;
   background-color: #27ae60;
   border: none;
@@ -35,7 +49,7 @@ body {
 }
 
 .btn-1 {
-  padding:20px 60px;
+  padding:12px 45px;
   outline: none;
   background-color: #ef233c;
   border: none;
@@ -72,7 +86,7 @@ a:active{
 input[type="text"]
 {
   margin: 0.5em;
-  padding:8px 80px; 
+  padding:8px 50px; 
   border:2px black solid;
   cursor:pointer;
   -webkit-border-radius: 5px;
@@ -81,6 +95,18 @@ input[type="text"]
   outline: none;
   
 }
+input[type="range"]
+{
+  appearance: auto;
+  cursor: default;
+  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+  padding: initial;
+  border: initial;
+  margin: 2px;
+  width: 85%;
+
+}
+
 .block {
   /* display:block; */
   margin-top: 40px;
@@ -89,4 +115,18 @@ input[type="text"]
 .block .btn{
   padding: 6px;
   box-shadow: 1px 5px #2c4d50;
+}
+
+.clearfix {
+  clear: both;
+}
+.language{
+  margin: 0.5em;
+  padding: 1px 55px;
+  border: 1px black solid;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
 }
