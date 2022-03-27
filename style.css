@@ -11,7 +11,7 @@ body {
 }
 
 * {
-	/* padding: auto; */
+	padding: auto;
 }
 .container{
   width: 900px;
@@ -83,7 +83,7 @@ a:active{
 }
 
 
-input[type="text"]
+textarea[type="text"]
 {
   margin: 0.5em;
   padding:8px 50px; 
