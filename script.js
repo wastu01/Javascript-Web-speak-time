@@ -393,7 +393,7 @@ function setUtterVolume() {
           
           await delay(0.7);
           speakSynth.cancel();
-          speak(time,["zh-TW",1,1,0.7], function () {
+          speak((webduinoTime.innerHTML),["zh-TW",1,1,0.7], function () {
             document.getElementById('btn3').addEventListener('click',function () {
               speakSynth.pause();
               console.log('click start00');
